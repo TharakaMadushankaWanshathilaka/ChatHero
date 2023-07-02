@@ -2,4 +2,14 @@
     <string name="app_name">ChatHero</string>
     <string name="title_activity_sign_up">SignUp</string>
     <string name="title_activity_login">Login</string>
+    <string name="ChatHero_logo">ChatHero logo</string>
+    <string name="ChatHero">ChatHero</string>
+    <string name="don_t_have_an_account_sign_up_from_here">Don\'t have an account? Sign up from here</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+    <string name="user">User</string>
 </resources>

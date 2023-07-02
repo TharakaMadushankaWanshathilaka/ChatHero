@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/ChatHero"
+        android:textAlignment="center"
+        android:textColor="@color/custom_blue"
+        android:background="@color/custom_transparent"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/chat"
+        android:background="@color/custom_transparent"
+        android:contentDescription="@string/ChatHero_logo" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@+id/appLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="@string/email"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="@string/password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/custom_blue"
+        android:text="@string/login"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/custom_transparent"
+        android:minHeight="50dp"
+        android:text="@string/don_t_have_an_account_sign_up_from_here"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/custom_light_blue" />
+
+</RelativeLayout>

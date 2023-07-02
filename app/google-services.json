@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253612169036",
+    "project_id": "chathero-tmw7",
+    "storage_bucket": "chathero-tmw7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253612169036:android:1db5391331fb45a427e1e9",
+        "android_client_info": {
+          "package_name": "com.example.chathero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253612169036-a50c9prd3oucer5embbtoh6lfr18ks82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeAg7zddW1PTJhpNvHYtVLWnS9zv1yh_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253612169036-a50c9prd3oucer5embbtoh6lfr18ks82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
