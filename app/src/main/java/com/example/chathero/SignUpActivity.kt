@@ -52,11 +52,12 @@ class SignUpActivity : ComponentActivity() {
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
+                    addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
+                    val intent = Intent(this@SignUpActivity, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                     Toast.makeText(this@SignUpActivity, "Sign Up Successful!",
                         Toast.LENGTH_SHORT).show()
-                    addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
 
                 } else {
                     Toast.makeText(this@SignUpActivity, "error!",
@@ -66,10 +67,10 @@ class SignUpActivity : ComponentActivity() {
             }
     }
 
+
     private fun addUserToDatabase(name: String, email: String, uid: String){
         mDbRef = FirebaseDatabase.getInstance().getReference()
         mDbRef.child("user").child(uid).setValue(User(name, email, uid))
-
     }
 
 }

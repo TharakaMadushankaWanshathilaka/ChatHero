@@ -29,6 +29,7 @@ class LoginActivity : ComponentActivity() {
 
         signupButton.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
+            finish()
             startActivity(intent)
 
         }
